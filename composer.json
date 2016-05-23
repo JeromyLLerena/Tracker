@@ -1,0 +1,22 @@
+{
+    "name": "Jeromy/Tracker",
+    "description": "Data tracker",
+    "license": "MIT",
+    "keywords": ["trace"],
+    "authors": [
+        {
+            "name": "Jeromy Llerena",
+            "email": "jeromy.llerena@tektonlabs.com",
+            "homepage": "http://facebook.com/j3r0my"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jeromy\\Tracker\\": "src"
+        }
+    }
+}
