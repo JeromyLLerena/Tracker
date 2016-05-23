@@ -4,7 +4,7 @@ namespace jeromy\tracker;
 
 class DataTracker
 {
-	public function trace($project_namespace) {
+	public static function trace($project_namespace) {
 		$trace = debug_backtrace();
 		$len   = count($trace);
 		$stack = [];
