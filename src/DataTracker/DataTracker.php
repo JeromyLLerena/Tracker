@@ -1,6 +1,6 @@
 <?php
 
-namespace jeromy\tracker;
+namespace DataTracker;
 
 class DataTracker
 {

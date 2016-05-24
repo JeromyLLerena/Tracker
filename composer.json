@@ -1,13 +1,13 @@
 {
     "name": "jeromy/tracker",
     "description": "Data tracker",
-    "license": "MIT",
+    "license": "",
     "keywords": ["trace"],
     "authors": [
         {
             "name": "Jeromy Llerena",
             "email": "jeromy.llerena@tektonlabs.com",
-            "homepage": "http://facebook.com/j3r0my"
+            "homepage": "http://tektonlabs.com"
         }
     ],
     "require": {},
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "jeromy\\tracker\\": "src"
+            "DataTracker\\": "src/DataTracker/"
         }
     }
 }
