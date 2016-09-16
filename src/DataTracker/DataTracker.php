@@ -43,12 +43,7 @@ class DataTracker
 						}
 					}
 
-					$encoded_args = json_encode($item["args"]) . "\n\n";
-					$encoded_args = str_replace('{', "\n" . '{' . "\n", $encoded_args);
-					$encoded_args = str_replace('}', "\n" . '}' . "\n", $encoded_args);
-					$encoded_args = str_replace("\/", '/', $encoded_args);
-					$encoded_args = str_replace('\"', '"', $encoded_args);
-
+					$encoded_args = var_export($item["args"], true) . "\n";
 					$item["args"] = wordwrap($encoded_args , 70, "\n", true);
 					krsort($item);
 					$order++;
