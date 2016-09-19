@@ -3,7 +3,7 @@
 /*
  * This file is part of DataTracker.
  *
- * (c) Jeromy Llerena Arroyo <jeromyllerna@gmail.com>
+ * (c) Jeromy Llerena Arroyo <jeromyllerena@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE.txt
  * file that was distributed with this source code.
