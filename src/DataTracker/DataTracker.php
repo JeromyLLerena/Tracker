@@ -4,7 +4,7 @@ namespace DataTracker;
 
 class DataTracker
 {
-	public static function trace($project_namespace) {
+	public static function trace() {
 		$trace = debug_backtrace();
 		$len   = count($trace);
 		$stack = [];
@@ -13,7 +13,7 @@ class DataTracker
 		foreach ($trace as $key => $item) {
 			if (array_key_exists("class", $item)) {
 				$item["order"] = $order;
-				if (strpos($item["class"], $project_namespace) !== false || $key == $len - 1) {
+				if (strpos($item["class"], app()->getNamespace()) !== false || $key == $len - 1) {
 
 					if(isset($item["function"])) {
 						$class_text =  $item["class"] . "::" . $item["function"] . "()";
