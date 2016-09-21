@@ -28,11 +28,6 @@ class TrackerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/../config/config.php' => config_path('jwt.php'),
-        ], 'config');
-
-
         $this->commands('tracker.trace.data');
     }
 
